@@ -159,7 +159,6 @@ void applyCellularAutomation(int *grid, const int *noiseGrid, int count, int gri
                     for (int x = k - 1; x <= k + 1; x++) {
                         if (isWithinMapBounds(x, y, gridH, gridW)) {
                             if (y != j || x != k) {
-                                printf("%d", noiseGrid[y * gridW + x]);
                                 if (noiseGrid[y * gridW + x] == 1) {
                                     neighborWallCount++;
                                 }
